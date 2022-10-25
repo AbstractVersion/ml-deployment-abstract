@@ -1,0 +1,10 @@
+
+apiVersion: kafka.strimzi.io/v1beta2
+kind: KafkaTopic
+metadata:
+  name: post-topic
+  labels:
+    strimzi.io/cluster: "kafka-cluster"
+spec:
+  partitions: 5 # equilevant to beat-box count
+  replicas: 3 # equilevant to min broker count
